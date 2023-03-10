@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: hsl(50, 69%, 69%);
+    background-color: hsla(55, 75%, 80%,0.5);
+}
+
+#p1{
+    color: hsl(213, 100%, 35%);
+}
+
+#p2{
+    background-color: hsla(76, 90%, 44%, 0.3);
+    color: hsl(294, 84%, 41%);
+}
