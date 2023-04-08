@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #fdbf00;
+}
+.heading{
+  text-align: center;
+  text-decoration: underline;
+}
+.card1{
+    width: 540px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 30%;    
+    perspective: 1200px;
+    transition: 1s;
+    
+}
+.card1:hover {
+    transform: scale(1.7) translate(40%,-10%);
+    z-index: 999;
+}
+.card1:hover .outside{
+    transform: rotateY(-180deg);
+}
+body:hover{
+    background-color: #ba331e;
+}
+.outside,.inside{
+     height: 100%;
+     width: 50%;
+     position: absolute;
+     left: 50%;
+}
+
+.inside{
+    background: tomato;
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+}
+.outside{
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    background: transparent;
+}
+.tomato{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 55%;
+    height: 40%;
+    background: rgb(254, 25, 25);
+    border-radius: 50% 45% / 45% 40%;
+}
+.tomato .stem-hole{
+    position: absolute;
+    width: 19%;
+    height: 5%;
+    border-radius: 50%;
+    background: #ba331e;
+    left: 35%;
+    top: 5%; 
+}
+.tomato .leaf{
+    position: absolute;
+    width: 10%;
+    height: 25%;
+    background: transparent;
+    border-right: 20px solid #1c8c4a;
+    border-radius: 0% 100% 50% 50% / 0% 50% 50% 100% ;
+}
+
+.tomato  .l1{
+    transform: rotate(-45deg);
+    left: 33%;
+    top: -13%;
+}
+.tomato  .l2{
+    transform: rotate(-15deg);
+    left: 39%;
+    top: -17%;
+}
+.tomato  .l3{
+    left: 50%;
+    top: -17%;
+    transform:  scale(-1) rotate(60deg);
+}
+.tomato .left-eye{
+    position: absolute;
+    width: 5%;
+    height: 6%;
+    background: #3d3d3d;
+    border-radius: 50%;
+    left: 30%;
+    top: 45%;
+}
+
+.tomato .right-eye{
+    position: absolute;
+    width: 5%;
+    height: 6%;
+    background: #3d3d3d;
+    border-radius: 50%;
+    left: 50%;
+    top: 45%;
+}
+.tomato .mouth{
+    position: absolute;
+    width: 18%;
+    height: 20%;
+    border: 3px solid #3d3d3d;
+    border-color: transparent transparent #3d3d3d transparent;
+    border-radius: 50% 50% 50% 50%/60% 59% 41% 40%;
+    top: 41%;
+    left: 33%;
+}
+.tomato .left-arm {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent #3d3d3d transparent;
+    z-index: -1;
+    left: -20%;
+    top: 45%;
+  }
+  
+.tomato  .right-arm {
+    position: absolute;
+    width: 37%;
+    height: 20%;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent #3d3d3d transparent;
+    right: -13%;
+    top: 65%;
+    transform: scaleY(-1) rotate(-45deg);
+  }
+  
+.tomato  .left-leg {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent transparent #3d3d3d;
+    z-index: -1;
+    left: 27%;
+    top: 85%;
+    transform: rotate(15deg)
+  }
+  
+.tomato .right-leg {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent transparent transparent #3d3d3d;
+    left: 52%;
+    top: 84%;
+    transform: rotate(-10deg) scaleX(-1);
+  }
+.tomato  .blush-left {
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    border-radius: 50%;
+    background: #ff6984;
+    top: 50%;
+    left: 22%;
+  }
+  
+.tomato  .blush-right {
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    border-radius: 50%;
+    background: #ff6984;
+    top: 50%;
+    left: 53.5%;
+  }
+  
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    background-color: white;
+}
+.front{
+    background-color: white;
+}
+.back{
+    transform: rotateY(180deg);
+    background: tomato;
+}
+
+
+.outside p{
+    font-size: 26px;
+    margin-top: 30px;
+    text-align:center;
+    letter-spacing: 6px;
+    color: #000046;
+}
+.back h1{
+    font-size: 200px;
+    line-height: 120px;
+    text-align: center;
+}
+.back p{
+    margin-bottom: 50px;
+    color: azure;
+}
+.inside p{
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.card1 .inside li{
+    font-weight: bolder ;
+    color: palegoldenrod;
+}
+
+/* fish css */
+
+.card2{
+    width: 540px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 30%;    perspective: 1200px;
+    transition: 1s;
+}
+.card2:hover {
+    transform: scale(1.7) translate(-20%,-10%);
+}
+.card2:hover .outside{
+    transform: rotateY(-180deg);
+}
+.card2 body:hover{
+    background: #2020d8;
+}
+
+.card2 .back,.card2 .inside{
+    background: rgb(42, 121, 152);
+}
+.card2 .front .img{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 60%;
+    height: 45%;
+    border-radius: 25%;
+}
+
+.card2 .inside li{
+  font-weight: bolder ;
+  color: azure;
+}
